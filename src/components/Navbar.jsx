@@ -24,14 +24,7 @@ function Navbar() {
     <nav className="bg-[#fff7ef] shadow-sm sticky top-0 z-100">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-24">
         
-        {/* Logo */}
-        <Link to="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
-          <img 
-            src={logo} 
-            alt="ClamaJolie Logo" 
-            className="h-16 w-auto object-contain rounded-2xl" 
-          />
-        </Link>
+        
 
         {/* Menu Desktop */}
         <div className="hidden md:flex items-center gap-8">
