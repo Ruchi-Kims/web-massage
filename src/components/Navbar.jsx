@@ -24,7 +24,14 @@ function Navbar() {
     <nav className="bg-[#fff7ef] shadow-sm sticky top-0 z-100">
       <div className="max-w-7xl mx-auto px-4 flex justify-between items-center h-24">
         
-        
+        {/* Logo */}
+        <Link to="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
+          <img 
+            src={logo} 
+            alt="ClamaJolie Logo" 
+            className="h-16 w-auto object-contain rounded-2xl" 
+          />
+        </Link>
 
         {/* Menu Desktop */}
         <div className="hidden md:flex items-center gap-8">
@@ -56,8 +63,7 @@ function Navbar() {
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-[#fff7ef] shadow-xl border-t border-pink-100 py-8 md:hidden flex flex-col items-center animate-in slide-in-from-top duration-300">
           
-          {/* Logo centré */}
-          <img src={logo} alt="Logo" className="h-20 w-auto mb-6 rounded-2xl" />
+          
 
           {/* Liens centrés */}
           <div className="w-full flex flex-col items-center space-y-2">
