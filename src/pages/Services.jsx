@@ -45,7 +45,11 @@ function Services({ isHome }) {
                     À partir de {service.price}
                   </p>
                   <button className="w-full bg-[#ff85a1] hover:bg-[#ff6b8d] text-white font-bold py-3 rounded-xl transition-colors shadow-md">
-                    Découvrir
+                    <Link 
+  to={`/services/${service.id}`} 
+  className="border-2 border-pink-400 text-pink-500 px-6 py-2 rounded-full hover:bg-pink-400 hover:text-white transition-all">
+                    Découvrir 
+                    </Link>
                   </button>
                 </div>
               </div>
